@@ -24,6 +24,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Build website
+        run: echo "this should be seen"
         run: npm run build
   deploy:
     needs: build
